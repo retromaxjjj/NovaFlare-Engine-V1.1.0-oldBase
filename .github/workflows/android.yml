@@ -49,7 +49,7 @@ jobs:
             export/release/android/obj
           key: cache-android-build
 
-         -name: Install Dependencies
+      - name: Install Dependencies
         run: |
           haxelib setup ~/haxelib
           haxelib install lime
