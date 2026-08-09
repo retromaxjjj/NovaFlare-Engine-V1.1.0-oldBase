@@ -31,6 +31,11 @@
       "version": "2.5.0"
     },
     {
+  "name": "hxCodec",
+  "type": "haxelib",
+  "version": "2.6.0"
+    },
+    {
       "name": "hxcpp",
       "type": "git",
       "dir": null,
