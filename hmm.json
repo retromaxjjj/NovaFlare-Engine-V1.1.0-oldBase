@@ -6,6 +6,11 @@
       "version": "7.9.0"
     },
     {
+  "name": "androiddialogs",
+  "type": "haxelib",
+  "version": "1.0.0"
+    },
+    {
       "name": "openfl",
       "type": "haxelib",
       "version": "9.2.0"
