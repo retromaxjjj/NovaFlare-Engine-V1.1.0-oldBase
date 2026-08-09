@@ -49,11 +49,9 @@
     },
     {
   "name": "SScript",
-  "type": "git",
-  "dir": null,
-  "ref": "main",
-  "url": "https://github.com/Sirox-Dev/sscript"
-    },
+  "type": "haxelib",
+  "version": null
+},
     {
       "name": "hscript",
       "type": "haxelib",
