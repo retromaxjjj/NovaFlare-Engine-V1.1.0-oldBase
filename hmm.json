@@ -35,7 +35,12 @@
       "type": "git",
       "dir": null,
       "ref": "master",
-      "url": "https://github.com/mcagabe19-stuff/hxcpp"
+      "url": "https://github.com/HaxeFoundation/hxcpp"
+
+
+
+
+
     },
     {
       "name": "hxCodec",
@@ -43,9 +48,11 @@
       "version": "2.6.0"
     },
     {
-      "name": "SScript",
-      "type": "haxelib",
-      "version": null
+  "name": "SScript",
+  "type": "git",
+  "dir": null,
+  "ref": "main",
+  "url": "https://github.com/Sirox-Dev/sscript"
     },
     {
       "name": "hscript",
