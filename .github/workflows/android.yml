@@ -54,11 +54,8 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib install hmm --quiet
-          # Принудительно ставим рабочий hxcpp до того, как hmm попытается затянуть мёртвый репозиторий:
-          haxelib git hxcpp https://github.com/HaxeFoundation/hxcpp
           haxelib run hmm install
-          # Перезаписываем sscript на рабочий форк:
-          haxelib git sscript https://github.com/Sirox-Dev/sscript
+
 
 
 
