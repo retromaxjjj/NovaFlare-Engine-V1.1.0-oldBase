@@ -6,11 +6,6 @@
       "version": "7.9.0"
     },
     {
-  "name": "androiddialogs",
-  "type": "haxelib",
-  "version": "1.0.0"
-    },
-    {
       "name": "openfl",
       "type": "haxelib",
       "version": "9.2.0"
@@ -19,7 +14,7 @@
       "name": "flixel",
       "type": "haxelib",
       "version": "5.5.0"
-    },    
+    },
     {
       "name": "flixel-addons",
       "type": "haxelib",
@@ -35,26 +30,20 @@
       "type": "haxelib",
       "version": "2.5.0"
     },
-   {
-  "name": "hxcpp",
-  "type": "haxelib",
-  "version": "4.2.1"
-},
-
-
-
-
+    {
+      "name": "hxcpp",
+      "type": "git",
+      "dir": null,
+      "ref": "master",
+      "url": "https://github.com/HaxeFoundation/hxcpp"
     },
     {
-      "name": "hxCodec",
-      "type": "haxelib",
-      "version": "2.6.0"
+      "name": "SScript",
+      "type": "git",
+      "dir": null,
+      "ref": "main",
+      "url": "https://github.com/Sirox-Dev/sscript"
     },
-    {
-  "name": "SScript",
-  "type": "haxelib",
-  "version": null
-},
     {
       "name": "hscript",
       "type": "haxelib",
