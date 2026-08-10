@@ -1,19 +1,13 @@
-⁶concurrency: name: androidBuild
+name: buildAndroid
 
-# Controls when the action will run.
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   buildAndroid:
     name: buildAndroid
     runs-on: ubuntu-latest
@@ -37,7 +31,6 @@ jobs:
         uses: krdlab/setup-haxe@master
         with:
           haxe-version: 4.2.5
-
 
       - name: Restore Previous Cache
         id: cache-debug-build-android-restore
@@ -73,10 +66,6 @@ jobs:
           haxelib git devicelanguage https://github.com/beihu235/devicelanguage
           haxelib git sscript https://github.com/Sirox-Dev/sscript
 
-                 
-
-
-
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
 
@@ -96,26 +85,6 @@ jobs:
         env:
           cert_pass: nullfunni
           cert_alias_pass: nullfunni
-      
-      - name: Cleanup
-        run: |
-          gh extension install actions/gh-actions-cache
-          
-          echo "Fetching list of cache key"
-          cacheKeysForPR=$(gh actions-cache list -R $REPO -B $BRANCH -L 100 | cut -f 1 )
-
-          ## Setting this to not fail the workflow while deleting cache keys. 
-          set +e
-          echo "Deleting caches..."
-          for cacheKey in $cacheKeysForPR
-          do
-              gh actions-cache delete $cacheKey -R $REPO -B $BRANCH --confirm
-          done
-          echo "Done"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPO: ${{ github.repository }}
-          BRANCH: refs/pull/${{ github.event.pull_request.number }}/merge
 
       - name: Save Current Cache
         id: cache-release-build-android-save
@@ -129,8 +98,7 @@ jobs:
           key: cache-android-build
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@main
+        uses: actions/upload-artifact@v4
         with:
-          name: androidBuild
-          path: export/release/android/bin/app/build/outputs/apk/debug
-        
+          name: NovaFlare-Android
+          path: export/release/android/bin/app/build/outputs/apk/release/*.apk
