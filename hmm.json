@@ -1,4 +1,4 @@
-{
+ {
   "dependencies": [
     {
       "name": "lime",
@@ -42,11 +42,14 @@
       "ref": "master",
       "url": "https://github.com/HaxeFoundation/hxcpp"
     },
-    {
+  {
   "name": "SScript",
-  "type": "haxelib",
-  "version": "4.1.0"
-    },
+  "type": "git",
+  "dir": null,
+  "ref": "main",
+  "url": "https://github.com/Sirox-Dev/sscript"
+  },
+
     {
       "name": "hscript",
       "type": "haxelib",
