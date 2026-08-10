@@ -31,25 +31,22 @@
       "version": "2.5.0"
     },
     {
-  "name": "hxCodec",
-  "type": "haxelib",
-  "version": "2.6.0"
-    },
-    {
       "name": "hxcpp",
       "type": "git",
       "dir": null,
       "ref": "master",
-      "url": "https://github.com/HaxeFoundation/hxcpp"
+      "url": "https://github.com/mcagabe19-stuff/hxcpp"
     },
-  {
-  "name": "SScript",
-  "type": "git",
-  "dir": null,
-  "ref": "master",
-  "url": "https://github.com/Sirox-Dev/sscript"
-  },
-
+    {
+      "name": "hxCodec",
+      "type": "haxelib",
+      "version": "2.6.0"
+    },
+    {
+      "name": "SScript",
+      "type": "haxelib",
+      "version": null
+    },
     {
       "name": "hscript",
       "type": "haxelib",
@@ -101,4 +98,4 @@
       "url": "https://github.com/MaysLastPlay77/extension-androidtools"
     }
   ]
-}
+  }
